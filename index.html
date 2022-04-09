@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://www.on3-step.com/tf/black/landingpage/index.html# -->
+<html lang="zxx" slick-uniqueid="3" style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+        
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+        
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+        
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+        
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+        }
+        
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+    </style>
+    <style>
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+        
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+        
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="./css/css">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+        
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style>
+        @media print {
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+        
+        @media screen {
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+        
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+        
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+        
+        p {
+            text-align: justify;
+        }
+    </style>
+
+    <title>Psikem Therapy</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <!-- favicon -->
+    <link href="./images/logo.png" rel="icon" sizes="32x32" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- font themify CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- black CSS -->
+    <link href="./css/animated-black.css" rel="stylesheet">
+    <link href="./css/black-style.css" rel="stylesheet">
+    <link href="./css/queries-black.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/marker.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/controls.js"></script>
+    <meta name="google-site-verification" content="hZXNGnIA3iKhmD9PncCJq02RfVbQj60oQ-qqO2o_o0I" />
+
+</head>
+
+<body style="">
+    <!-- preloader -->
+    <div class="bg-preloader scale3dpreloader" style="display: none;"></div>
+    <div class="preloader" style="display: none;">
+        <div class="mainpreloader">
+            <img alt="preloaderlogo" src="./images/logo.png"> <span class="logo-preloader">Espere un momento</span>
+        </div>
+    </div>
+    <!-- preloader end -->
+    <!-- content wraper -->
+    <div class="content-wrapper">
+        <!-- nav -->
+        <div class="navbar navbar-default navbar-fixed-top onStep animated fadeInRight" data-animation="fadeInRight" data-time="0">
+            <div class="container">
+                <div class="row">
+                    <!-- menu mobile display -->
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon icon-bar"></span> 
+                        <span class="icon icon-bar"></span> 
+                        <span class="icon icon-bar"></span></button>
+                    <!-- logo -->
+                    <a class="navbar-brand onStep animated fadeInLeft" data-animation="fadeInLeft" data-time="100"><img alt="logo" src="./images/logo.png"></a>
+                    <!-- mainmenu start -->
+                    <div class="menu-init" id="main-menu">
+                        <nav>
+                            <ul>
+                                <li><a class="scroll-link onStep animated fadeInRight active" data-animation="fadeInRight" data-time="600" data-id="home" data-hover="Home">Inicio</a></li>
+                                <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="700" data-id="about" data-hover="ABOUT">¿Quiénes somos?</a></li>
+                                <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="800" data-id="service" data-hover="SERVICE">Servicios para ti</a></li>
+                                <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="1000" data-id="news" data-hover="Get News">Testimonios de pacientes</a></li>
+                                <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="900" data-id="lattestnews" data-hover="Blog">ACERCA DE</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- mainmenu end -->
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- nav end -->
+        <!-- home -->
+        <section aria-label="home" class="mainbg no-top no-bottom" id="home" style="min-height: 904px;">
+            <!-- slideshowbg -->
+            <div class="bgslider"><img class="animfadebg" alt="background1" src="./images/bg-1.jpg"></div>
+            <!-- slideshowbg end -->
+            <!-- intro -->
+            <div class="container">
+                <div class="overlay-main v-align">
+                    <div class="row" style="margin-left: 5%;">
+                        <div class="col-md-6">
+                            <h3 class="onStep animated bounceInLeft" data-animation="bounceInLeft" data-time="1200">Bienvenido(a)</h3>
+                            <h1 class="onStep animated bounceInLeft" data-animation="bounceInLeft" data-time="1500">Psikem Therapy</h1>
+                            <p class="onStep animated bounceInLeft" data-animation="bounceInLeft" data-time="1700">psicoterapia especializada en línea</p>
+                            <p class="onStep animated bounceInLeft" data-animation="bounceInLeft" data-time="1700">Hola, nos da gusto que estés aquí, Con el servicio en línea no importa en que parte del mundo estés Psikem Therapy está al alcance de un clic, queremos iniciar contigo un proceso psicoterapéutico que te ayude con las situaciones
+                                por la cuales estas pasando.</p>
+                            <div class="btn-home onStep animated bounceInLeft" data-animation="bounceInLeft" data-time="1900">
+                                <a class="scroll-link" data-id="about">ENTRAR</a>
+                            </div>
+                            <!-- <div class="btn-home-border onStep animated bounceInLeft" data-animation="bounceInLeft" data-time="1900">
+                                <a class="scroll-link" data-id="about">ENTRAR</a>
+                            </div> -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="carousel-item active">
+                                <img src="./images/1.jpeg" alt="Los Angeles" width="90%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- intro end -->
+        </section>
+        <!-- home end -->
+        <!-- about -->
+        <section class="whitepage-1 no-top no-bottom" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                            <h1 style="color: #15AABF;">¿Quiénes somos? <span class="devider-left"></span>
+                            </h1>
+                            <p>
+                                Somos un Centro de Psicoterapia cognitivo conductual y desarrollo humano que brinda soporte y acompañamiento psicológico y en línea a través de una metodología práctica, efectiva e innovadora.
+                            </p>
+                            <p>Otorgamos cursos y entrenamientos de desarrollo humano centrados en temas actuales de tu interés.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-xs-11">
+                        <div class="onStep" data-animation="fadeInRight" data-time="600">
+                            <img class="img-responsive" alt="img" src="./images/Demo-img-about.jpg">
+                        </div>
+                    </div> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                            <h1>Psicóloga Karen Barrios</h1>
+                            <!-- <p>Diplomado Cognitivo Conductual en Niños y Adolescentes</p> -->
+                            <p>Cedula profesional 8219372<span class="devider-left"></span></p>
+                            <ul>
+                                <li>-Maestría en Psicoterapia individual y de pareja, Instituto Mexicano de la Pareja.</li>
+                                <li>-Licenciatura en Psicología, Universidad Tecnológica de México.</li>
+                                <li>-Diplomado en Tanatología con enfoque Gestalt, Instituto Mexicano de Psicooncología.</li>
+                                <li>-Curso: manejo del paciente ansioso, Insight soluciones psicológicas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-10">
+                        <div class="onStep" data-animation="fadeInRight" data-time="600">
+                            <img style="width: 70%; border-radius: 50%;" class="img-responsive rounded-circle" alt="img" src="./images/Psic3.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                            <h1>Psicóloga Karina Herrera</h1>
+                            <p>Cedula profesional 7982594<span class="devider-left"></span></p>
+                            <ul>
+                                <li>-Maestría en Psicoterapia Cognitivo-conductual, Instituto de terapia cognitivo conductual. </li>
+                                <li>-Licenciatura en Psicología, Centro de Estudios Superiores Azteca.</li>
+                                <li>-Diplomado en Psicología Clínica, Universidad Azteca. </li>
+                                <li>-Diplomado terapia cognitivo conductual para adultos, Instituto de Terapia cognitivo-conductual. </li>
+                                <li>-Diplomado Cognitivo Conductual en Niños y Adolescentes. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="onStep" data-animation="fadeInRight" data-time="600">
+                            <img style="width: 65%; height:50% ; margin-left: 100px; border-radius: 50%;" class="img-responsive rounded-circle" src="./images/Psic1.jpeg" alt="Karina Herrera">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                            <h1>Psicóloga Gloria Elizondo</h1>
+                            <p>Cedula profesional 8362453 <span class="devider-left"></span></p>
+                            <ul>
+                                <li>-Maestría en terapia cognitivo-conductual, Instituto de terapia cognitivo conductual.</li>
+                                <li>-Licenciatura en psicología, Facultad de estudios superiores zaragoza UNAM..</li>
+                                <li>-Diplomado en psicología infantil, Asociación mexicana de alternativas en psicología AMAPSI.</li>
+                                <li>-Diplomado en psicología terapia familiar sistémica y posmoderna, SIPAP.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-10">
+                        <div class="onStep" data-animation="fadeInRight" data-time="600">
+                            <img style="width: 70%; border-radius: 50%;" class="img-responsive rounded-circle" src="./images/Psic2.jpeg" alt="Karina Herrera">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+    </div>
+    </section>
+    <!-- about end -->
+    <!-- blue -->
+    <div class="onStep animbouncefall" data-animation="animbouncefall" data-time="100">
+        <section class="blue-page v-align">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <!-- <a class="big-video" href="./images/video.mp4">
+                                <h1>Ver Video
+                                    <i class="fas fa-play"></i>
+                                </h1>
+                            </a> -->
+                            <video src="./images/video.mp4" style="width: 100%;" controls autoplay>
+                                <p>Su navegador no soporta vídeos HTML5.</p>
+                              </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- blue end -->
+    <!-- service-->
+    <section class="whitepage" id="service">
+        <div class="container">
+            <div class="row" style="margin-top: -200px;">
+                <div class="col-md-12 col-xs-12">
+                    <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                        <h1 style="color: #15AABF;">Servicios para ti
+                            <span class="devider-left"></span>
+                        </h1>
+                        <p>
+                            Sabemos la importancia que tiene la estabilidad emocional actualmente, nuestro compromiso es acompañarte y ayudarte a recuperar tu plenitud y tu felicidad, a través de la terapia cognitivo-conductual y psicoterapia integral aprenderás a experimentar tus
+                            pensamientos, conductas, emociones y sensaciones de una manera totalmente plena, te garantizamos que encontraras herramientas efectivas y notarás cambios significativos y beneficios en cada de las áreas de tu vida a reconstruir.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="onStep" data-animation="fadeInLeft" data-time="500">
+                        <div class="box-icon-simple left">
+                            <div class="text">
+                                <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                                <h3>Psicoterapia infantil</h3>
+                                <lu>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="300">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Estilos de crianza</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="350">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Entrenamiento en habilidades sociales</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="400">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Psicoeducación y manejo de emociones </li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="450">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Bullying</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="500">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Duelo</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="550">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Autoestima</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="600">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Ansiedad</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="650">
+                                        <li><i class="fas fa-puzzle-piece" style="color: #FF690F;"></i> Depresión</li>
+                                    </div>
+                                </lu>
+                            </div>
+                        </div>
+                        <div class="box-icon-simple left">
+                            <div class="text">
+                                <div class="onStep" data-animation="fadeInUp" data-time="0">
+                                    <img src="./images/infantil.jpeg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4">
+                    <div class="onStep" data-animation="fadeInUp" data-time="0">
+                        <br><br><br><br>
+                        <img src="./images/7.jpeg" class="img-responsive" alt="">
+                    </div>
+                </div> -->
+                <div class="col-md-4">
+                    <div class="onStep" data-animation="fadeInRight" data-time="500">
+                        <div class="box-icon-simple left">
+                            <div class="text">
+                                <span class="icon"><i class="fas fa-headphones"></i></span>
+                                <h3>Psicoterapia para adultos</h3>
+                                <lu>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="300">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Depresión</li>
+
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="350">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Angustia</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="400">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Estrés</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="450">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Estrés postraumático</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="500">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Codependencia emocional</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="550">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Autoestima</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="600">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Ansiedad</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="650">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Trastorno obsesivo- compulsivo</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="700">
+                                        <li><i class="fas fa-coffee" style="color: #82C91E;"></i> Regulación emocional</li>
+                                    </div>
+                                </lu>
+                            </div>
+                        </div>
+                        <div class="box-icon-simple left">
+                            <div class="text">
+                                <div class="onStep" data-animation="fadeInUp" data-time="0">
+                                    <img src="./images/7.jpeg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-icon-simple left">
+                            <div class="text">
+                                <span class="icon"><i class="fas fa-headphones"></i></span>
+                                <h3>Terapia de pareja</h3>
+                                <lu>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="300">
+                                        <li><i class="fas fa-heart" style="color: #F5292B;"></i> Celos</li>
+
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="350">
+                                        <li><i class="fas fa-heart" style="color: #F5292B;"></i> Codependencia</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="400">
+                                        <li><i class="fas fa-heart" style="color: #F5292B;"></i> Comunicación</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="450">
+                                        <li><i class="fas fa-heart" style="color: #F5292B;"></i> Separación y divorcio</li>
+                                    </div>
+                                    <div class="onStep" data-animation="fadeInLeft" data-time="500">
+                                        <li><i class="fas fa-heart" style="color: #F5292B;"></i> Sexualidad</li>
+                                    </div>
+                                </lu>
+                            </div>
+                        </div>
+                        <div class="box-icon-simple left">
+                            <div class="text">
+                                <div class="onStep" data-animation="fadeInUp" data-time="0">
+                                    <img src="./images/pareja.jpeg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- serviceend -->
+    <!-- blue -->
+    <div class="onStep" data-animation="animbouncefall" data-time="100">
+        <section class="blue-page v-align" id="news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h1>Testimonios de pacientes</h1>
+                        </div>
+                    </div>
+                    <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                        <p>“Sali de un ciclo de depresión y soledad, la terapia ha sido una herramienta de aprendizaje, me he conocido, aceptado, he aprendido a amarme y a darle sentido y dirección a mi vida. La terapeuta es comprometida, las sesiones son
+                            prácticas y eficientes, altamente recomendable.”
+                            <br>
+                            <em>Laura Rivera</em></p>
+                    </div>
+                    <div class="about onStep" style="margin-top: -100px;" data-animation="fadeInLeft" data-time="500">
+                        <p><em>“He adquirido herramientas para hacer frente a la ansiedad, ya no la sufro como antes, he aprendido a afrontarla y a manejar esos pensamientos que me generaban angustia. La terapeuta muy empática y profesional, 100% recomendable”.</em>
+                            <br> Esteban Hernández
+                        </p>
+                    </div>
+                    <div class="about onStep" style="margin-top: -100px;" data-animation="fadeInLeft" data-time="500">
+                        <p>“Había tenido diversos procesos psicológicos, pero únicamente la terapia cognitivo conductual me funciono, me ha enseñado como romper los ciclos negativos que perpetuaban mi vida, ahora experimento amor y plenitud en mi presente”.
+                            <br>
+                            <em>Esther Miranda</em></p>
+                    </div>
+                    <!-- <div class="col-md-12">
+                        <div class="text-center">
+                            <form action="http://www.on3-step.com/tf/black/landingpage/subscribe.php" id="subscribe" method="post" name="subscribe">
+                                <input class="subscribfield subscribeemail" id="subscribeemail" name="subscribeemail" type="text">
+                                <button class="btn-form" id="submit-2" type="submit">Subscribe</button>
+                            </form>
+                            <div class="subscribesuccess">Thank you for fill your email</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- blue end -->
+    <section class="whitepage no-bottom" id="lattestnews">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: -100px;">
+                    <h1 class="text-center onStep" data-animation="fadeInUp" data-time="0" style="color: #15AABF;">¿Porque Psikem Therapy?
+                        <span class="devider-cont"></span></h1>
+                    <p>
+                        De acuerdo con la guía de la práctica clínica a partir de diversos estudios científicos está comprobado que la terapia cognitivo conductual, es el modelo terapéutico más eficaz para el manejo de experiencias de crisis y alteraciones psicológicas, trabaja
+                        sobre el motivo de consulta y en el momento presente generando nuevos estilos de percepción y afrontamiento ante la vida. Psikem Therapy es tu mejor opción alcanzar el bienestar y la felicidad que mereces.
+                    </p>
+                </div>
+            </div>
+            <br> <br> <br>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="about onStep" style="margin-top: -100px;" data-animation="fadeInLeft" data-time="500">
+                        <h3>Misión<span class="devider-left"></span>
+                        </h3>
+                        <p>
+                            Transformar y mejorar permanentemente el estilo de vida de nuestros pacientes a través de un modelo de tratamiento diferenciado y garantizado en cualquier lugar del mundo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="about onStep" style="margin-top: -100px;" data-animation="fadeInLeft" data-time="500">
+                        <h3>Visión<span class="devider-left"></span>
+                        </h3>
+                        <p>
+                            Ser un centro de atención psicológica que impacte de manera positiva y satisfactoria la vida de nuestros pacientes ejerciendo la psicología de manera humana y profesional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="about onStep" style="margin-top: -100px;" data-animation="fadeInLeft" data-time="500">
+                        <h3>Valores
+                            <span class="devider-left"></span>
+                        </h3>
+                        <p>
+                            En el campo de la Psicología sabemos de la importancia que tienen los valores
+                        </p>
+                        <p>
+                            <span style="font-weight: bold;">-Disciplina</span>
+                        </p>
+                        <p>
+                            <span style="font-weight: bold;">-Competencia</span>
+                        </p>
+                        <p>
+                            <span style="font-weight: bold;">-Responsabilidad</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+    <!-- price -->
+
+    <!-- price end -->
+
+    <!-- section contact -->
+    <section class="whitepage no-bottom" style="margin-top: -100px;" id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center onStep" data-animation="fadeInUp" data-time="0" style="color: #15AABF;">Contactanos
+                        <span class="devider-cont"></span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- contact form -->
+                <div class="col-md-8 col-xs-12">
+                    <div class="onStep" data-animation="fadeInLeft" data-time="600" id="contact">
+                        <form action="http://www.on3-step.com/tf/black/landingpage/index.html#" class="row" id="form-contact" method="post" name="form-contact">
+                            <input id="name-contact" name="name" placeholder="Tu nombre" type="text">
+                            <input id="tel-contact" name="name" placeholder="Tu numero de contacto" type="text">
+                            <input id="email-contact" name="email" placeholder="Tu e-mail" type="text">
+                            <textarea cols="50" id="message-contact" name="message" placeholder="Descripción de la situación por la cual estas pasandoy" rows="4"></textarea>
+                            <div class="success" id="mail_success">Gracias. Tu mensaje ha sido enviado</div>
+                            <div class="error" id="mail_failed"> Error, mensaje no enviado</div>
+                            <button class="btn-form" style="background: #15AABF;" id="send-contact" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- contact form end -->
+                <!-- address -->
+                <div class="col-md-4 col-xs-12">
+                    <div class="wrapaddres onStep" data-animation="fadeInRight" data-time="900">
+                        <h5>Informacion de Contacto</h5>
+                        <address>
+                                <span><strong>Santa María La Ribera #100-Int. 5, Cuauhtémoc, 06400 Ciudad de México, CDMX</strong></span>
+                                <span><strong>Phone :</strong> (56) 1287 4208</span>
+                                <span><strong>Email :</strong> <a href="mailto:psikemcenter@gmail.com">psikemcenter@gmail.com</a></span> <span><strong>Facebook :</strong> <a href="https://www.facebook.com/psikemcenter/">Psikem Therapy</a></span>
+                            </address>
+                    </div>
+                </div>
+                <!-- address end -->
+            </div>
+            <div class="row" style="margin-top: -200px;">
+                <div class="col-md-12 col-xs-12">
+                    <div class="about onStep" data-animation="fadeInLeft" data-time="500">
+                        <p style="text-align: center;">
+                            <span style="font-weight: bold;">AVISO DE CONFIDENCIALIDAD</span>, sus datos personales en <span style="font-weight: bold;">PSIKEM THERAPY</span> están protegidos conforme a la Ley Federal de Protección de Datos Personales
+                            en Posesión de Particulares.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section contact end -->
+
+    <!-- footer -->
+    <section class="footer" aria-label="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="onStep" data-animation="fadeInRight" data-time="0">
+                        Psikem Therapy © Copyright 2021
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right">
+                        <div class="social-icons  onStep" data-animation="fadeInLeft" data-time="600">
+                            <a href="https://www.facebook.com/psikemcenter"><i class="fab fa-facebook">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fab fa-twitter">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fab fa-linkedin-in">&nbsp;&nbsp;</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- ScrolltoTop -->
+    <div id="totop" style="display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    </div>
+    <!-- content wraper end -->
+
+    <!-- plugin JS -->
+    <script src="./js/pluginsblack.js" type="text/javascript"></script>
+    <!--  map google -->
+    <script src="./js/js.js"></script>
+    <script src="./js/map1.js" type="text/javascript"></script>
+    <!-- black JS -->
+    <script src="./js/black.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
