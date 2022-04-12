@@ -163,7 +163,7 @@
 
 </head>
 
-<body style="">
+<body >
     <!-- preloader -->
     <div class="bg-preloader scale3dpreloader" style="display: none;"></div>
     <div class="preloader" style="display: none;">
@@ -194,7 +194,6 @@
                                 <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="800" data-id="service" data-hover="SERVICE">Servicios para ti</a></li>
                                 <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="1000" data-id="news" data-hover="Get News">Testimonios de pacientes</a></li>
                                 <li><a class="scroll-link onStep animated fadeInRight" data-animation="fadeInRight" data-time="900" data-id="lattestnews" data-hover="Blog">ACERCA DE</a></li>
-
                             </ul>
                         </nav>
                     </div>
@@ -611,16 +610,19 @@
             <div class="row">
                 <!-- contact form -->
                 <div class="col-md-8 col-xs-12">
-                    <div class="onStep" data-animation="fadeInLeft" data-time="600" id="contact">
-                        <form action="http://www.on3-step.com/tf/black/landingpage/index.html#" class="row" id="form-contact" method="post" name="form-contact">
-                            <input id="name-contact" name="name" placeholder="Tu nombre" type="text">
-                            <input id="tel-contact" name="name" placeholder="Tu numero de contacto" type="text">
-                            <input id="email-contact" name="email" placeholder="Tu e-mail" type="text">
+                    <div class="onStep" data-animation="fadeInLeft" data-time="600" id="contact">                        
+                        <form action="https://formsubmit.co/psicoadmin@psicofy.net" method="POST">
+                            <input name="name" placeholder="Tu nombre" type="text">
+                            <input name="name" placeholder="Tu numero de contacto" type="text">
+                            <input name="email" placeholder="Tu e-mail" type="text">
                             <textarea cols="50" id="message-contact" name="message" placeholder="Descripción de la situación por la cual estas pasandoy" rows="4"></textarea>
+                            <input id="ciudad" name="ciudad" placeholder="¿De que ciudad nos escribes?" type="text">
                             <div class="success" id="mail_success">Gracias. Tu mensaje ha sido enviado</div>
                             <div class="error" id="mail_failed"> Error, mensaje no enviado</div>
-                            <button class="btn-form" style="background: #15AABF;" id="send-contact" type="submit">Enviar</button>
-                        </form>
+                            <br>
+                            <button class="btn-form" style="background: #15AABF;" id="send-contact" type="submit">Enviar</button>                            
+                            <button type="submit">Send</button>
+                       </form>                       
                     </div>
                 </div>
                 <!-- contact form end -->
