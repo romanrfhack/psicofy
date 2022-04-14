@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)http://www.on3-step.com/tf/black/landingpage/index.html# -->
-<html lang="zxx" slick-uniqueid="3" style="">
-
+<html lang="zxx" slick-uniqueid="3">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style>
@@ -611,17 +610,16 @@
                 <!-- contact form -->
                 <div class="col-md-8 col-xs-12">
                     <div class="onStep" data-animation="fadeInLeft" data-time="600" id="contact">                        
-                        <form action="https://formsubmit.co/psicoadmin@psicofy.net" method="POST">
-                            <input name="name" placeholder="Tu nombre" type="text">
-                            <input name="name" placeholder="Tu numero de contacto" type="text">
-                            <input name="email" placeholder="Tu e-mail" type="text">
+                        <form action="https://formsubmit.co/psicoadmin@psicofy.net" method="POST" class="row" id="form-contact">
+                            <input id="name-contact" name="name" placeholder="Tu nombre" type="text">
+                            <input id="tel-contact" name="tel-contact" placeholder="Tu numero de contacto" type="text">
+                            <input id="email-contact" name="email" placeholder="Tu e-mail" type="text">
                             <textarea cols="50" id="message-contact" name="message" placeholder="Descripción de la situación por la cual estas pasandoy" rows="4"></textarea>
                             <input id="ciudad" name="ciudad" placeholder="¿De que ciudad nos escribes?" type="text">
                             <div class="success" id="mail_success">Gracias. Tu mensaje ha sido enviado</div>
                             <div class="error" id="mail_failed"> Error, mensaje no enviado</div>
                             <br>
-                            <button class="btn-form" style="background: #15AABF;" id="send-contact" type="submit">Enviar</button>                            
-                            <button type="submit">Send</button>
+                            <button class="btn-form" style="background: #15AABF;" type="submit">Enviar</button>                                                        
                        </form>                       
                     </div>
                 </div>
