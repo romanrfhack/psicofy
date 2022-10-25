@@ -413,4 +413,13 @@ var owl = $("#owl-brand");
 });
 // HTML document is loaded end
 
+function showHideButton(selector){  
+  const aboutMe = document.querySelector(selector)
+  if(!aboutMe.classList.contains("showAboutMe")){
+    aboutMe.classList.add("showAboutMe")
+  }
+  else{
+    aboutMe.classList.remove("showAboutMe")
+  }
 
+}

@@ -2883,3 +2883,11 @@ screen and (max-height:300px) {
     line-height: normal;
     letter-spacing: normal;
 }
+
+.hideAboutMe{
+    display: none;
+}
+
+.showAboutMe{
+    display: block;
+}
