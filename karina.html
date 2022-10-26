@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .dismissButton {
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            color: #1a73e8;
+            border-radius: 4px;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            cursor: pointer;
+            padding: 0 24px
+        }
+        
+        .dismissButton:hover {
+            background-color: rgba(66, 133, 244, 0.04);
+            border: 1px solid #d2e3fc
+        }
+        
+        .dismissButton:focus {
+            background-color: rgba(66, 133, 244, 0.12);
+            border: 1px solid #d2e3fc;
+            outline: 0
+        }
+        
+        .dismissButton:hover:focus {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd
+        }
+        
+        .dismissButton:active {
+            background-color: rgba(66, 133, 244, 0.16);
+            border: 1px solid #d2e2fd;
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
+        }
+        
+        .dismissButton:disabled {
+            background-color: #fff;
+            border: 1px solid #f1f3f4;
+            color: #3c4043
+        }
+    </style>
+    <style>
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+        
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+        
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet" href="./css/css">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+        
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style>
+        @media print {
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+        
+        @media screen {
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+        
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+        
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+        
+        p {
+            text-align: justify;
+        }
+    </style>
+
+    <title>Psicofy Karina</title>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <!-- favicon -->
+    <link href="./images/logo.png" rel="icon" sizes="32x32" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- font themify CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- black CSS -->
+    <link href="./css/animated-black.css" rel="stylesheet">
+    <link href="./css/black-style.css" rel="stylesheet">
+    <link href="./css/queries-black.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/util.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/map.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/marker.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/stats.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="./js/controls.js"></script>
+    <meta name="google-site-verification" content="hZXNGnIA3iKhmD9PncCJq02RfVbQj60oQ-qqO2o_o0I" />
+</head>
+<body>
+    <div class="bg-preloader scale3dpreloader" style="display: none;"></div>
+    <div class="preloader" style="display: none;">
+        <div class="mainpreloader">
+            <img alt="preloaderlogo" src="./images/logo.png"> <span class="logo-preloader">Espere un momento</span>
+        </div>
+    </div>        
+    <!-- section contact -->
+    <section class="whitepage no-bottom" style="margin-top: -100px;" id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center onStep" data-animation="fadeInUp" data-time="0" style="color: #15AABF;">KARINA HERRERA MARTINEZ
+                        <span class="devider-cont"></span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- contact form -->
+                <div class="col-md-3 col-xs-12">
+                    <h5>S O B R E M Í</h5>                    
+                </div>
+                <!-- contact form end -->
+                <!-- address -->
+                <div class="col-md-9 col-xs-12">                    
+                    <p style="text-align: center;">
+                        Psicóloga clínica, con maestría en terapia cognitivo conductual, experiencia laboral en el área clínica privada e instituciones psiquiátricas. Capaz de desarrollar mi conocimiento y contribuir al desarrollo organizacional y de la sociedad.
+                    </p>
+                </div>
+                <!-- address end -->
+            </div>
+            <hr>
+            <div class="row">
+                <!-- contact form -->
+                <div class="col-md-3 col-xs-12">
+                    <h5>A P T I T U D E S</h5>                    
+                </div>
+                <!-- contact form end -->
+                <!-- address -->
+                <div class="col-md-9 col-xs-12">                    
+                    <p style="text-align: center;">
+                        *Creatividad *Productividad 	*Escucha activa 		*Disciplina		*Flexibilidad     	*Resiliencia	 *Empatía 	*Comunicación	 *Perseverancia		*Inteligencia Emocional 	*Adaptabilidad	 *Solución de problemas 	*Trabajo en equipo 
+
+                    </p>
+                </div>
+                <!-- address end -->
+            </div>
+            <hr>
+            <div class="row">
+                <!-- contact form -->
+                <div class="col-md-12 col-xs-12">
+                    <h5 style="text-align:center;">EXPERIENCIA PROFESIONAL</h5>                    
+                    <br>                    
+                    <h6>Consultorio particular septiembre 2013 – actual</h6>                    
+                    <p>                    
+                      Psicoterapia individual a adultos trabajo con ansiedad, equilibrio emocional, autoestima, culpa, toma de decisión. 
+                    </p>                    
+                </div>
+                <hr>
+                <div class="col-md-12 col-xs-12">                                        
+                    <h6>Psicóloga clínica en Terapify febrero 2021 - actual</h6>                    
+                    <p>                    
+                        Psicoterapeuta en Línea 
+                    </p>                    
+                </div>
+                <hr>
+                <div class="col-md-12 col-xs-12">                                        
+                    <h6>Hospital De Psiquiatría La Salud, ISEM</h6>                    
+                    <p style="font-weight: 700;">                    
+                        Periodo: Julio 2013, diciembre 2017
+                    </p> 
+                    <p style="font-weight: 700;">
+                        Actividades: Psicóloga clínica en área de consulta externa                        
+                    </p>                   
+                    <p>
+                        Psicoterapia individual breve aplicada a población con diagnóstico clínico de Discapacidad intelectual, Asperger, Autismo, TDAH, Ansiedad, Depresión, cambios de humor, Trastorno Límite de personalidad.  manejo de expediente clínico, entrevista psicodiagnóstica.                         
+                    </p>
+                    <p>
+                        Psicoterapia grupal con encuadre Cognitivo conductual y Dialectico Conductual dirigido a grupos de Apoyo primario, Depresión, ansiedad, Trastorno Límite de Personalidad.                         
+                    </p>
+                    <p style="font-weight: 700;">
+                        Psicóloga clínica en área de consulta interna                           
+                    </p>
+                    <p>
+                        Trabajo con usuarios con diagnóstico de Discapacidad Intelectual y Geriatría, Modificación de conducta, habilidades de la vida diaria, rehabilitación psicosocial.                          
+                    </p>
+                    <p>
+                        Ponente en Curso Psicología clínica, Hospital de Psiquiatría Granja La Salud. ISEM.2016                        
+                    </p>
+                    <p>
+                        Ponente en Congreso regional psicología, neurociencias y educación. Hospital de Psiquiatría Granja La Salud. ISEM.  2017                        
+                    </p>
+                </div>
+            </div>  
+            <hr>
+            <div class="row">                
+                <div class="col-md-3 col-xs-12">
+                    <h5>EDUCACIÓN</h5>                    
+                </div>                
+                <div class="col-md-9 col-xs-12">          
+                    <p style="text-align: center; font-weight: 700;">
+                        <H5>Maestría en Psicoterapia Cognitivo-conductual</H5>   
+                        <br>               
+                        Instituto de terapia cognitivo conductual.
+                        <br> 
+	                    Periodo septiembre 2016- septiembre 2018      
+                    </p>
+                </div>                
+                <div class="col-md-3 col-xs-12">                    
+                </div> 
+                <div class="col-md-9 col-xs-12" style="padding-top: 30px;">          
+                    <p style="text-align: center; font-weight: 700;">
+                        <H5>Licenciatura en Psicología General</H5>   
+                        <br>               
+                        Centro de Estudios Superiores Azteca.                                                  
+                        <br> 
+                        Periodo agosto 2008 - agosto 2011	                    
+                    </p>
+                </div>                
+            </div>   
+            <hr>
+            <hr>
+            <div class="row">                
+                <div class="col-md-3 col-xs-12">
+                    <h5>CURSOS Y CAPACITACIONES</h5>                    
+                </div>                                                
+                <div class="col-md-9 col-xs-12" style="padding-top: 30px;">          
+                    <ul>
+                        <li>
+                            ⮚	Diplomado en Psicología Clínica, Universidad Azteca. Junio 2012. 
+                        </li>
+                        <li>
+                            ⮚	Diplomado en terapia cognitivo conductual para adultos, Instituto de Terapia cognitivo-conductual. Septiembre 2013. 
+                        </li>
+                        <li>
+                            ⮚	Diplomado Cognitivo Conductual en Niños y Adolescentes, Instituto de Terapia cognitivo-Conductual. Marzo 2014.
+                        </li>
+                        <li>
+                            ⮚	Evaluación funcional del Enfermo Mental Crónico, H. de psiquiatría Samuel Ramírez Moreno. Junio 2013.
+                        </li>
+                        <li>
+                            ⮚	Terapia familiar: Horizontes modernidad y posmodernidad, Instituto de salud mental, ISEM.  Octubre 2013
+                        </li>
+                        <li>
+                            ⮚	Curso Modalidades de la Terapia Breve y Grupal, Instituto de salud mental, ISEM. Marzo 2014.
+                        </li>
+                        <li>
+                            ⮚	Curso de terapia Familiar, Instituto de salud mental, ISEM. Noviembre 2014
+                        </li>
+                    </ul>
+                </div>                
+            </div>   
+            <hr>
+
+        </div>
+    </section>
+    <!-- section contact end -->
+    <!-- footer -->
+    <br>
+    <section class="footer" aria-label="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="onStep" data-animation="fadeInRight" data-time="0">
+                        Psicofy © Copyright 2021
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right">
+                        <div class="social-icons  onStep" data-animation="fadeInLeft" data-time="600">
+                            <a href="https://www.facebook.com/psikemcenter"><i class="fab fa-facebook">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fab fa-twitter">&nbsp;&nbsp;</i></a>
+                            <a href="#"><i class="fab fa-linkedin-in">&nbsp;&nbsp;</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+    <!-- ScrolltoTop -->
+    <div id="totop" style="display: none;">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- plugin JS -->
+    <script src="./js/pluginsblack.js" type="text/javascript"></script>
+    <!--  map google -->
+    <script src="./js/js.js"></script>
+    <script src="./js/map1.js" type="text/javascript"></script>
+    <!-- black JS -->
+    <script src="./js/black.js" type="text/javascript"></script>
+</body>
+</html>
